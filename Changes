@@ -1,0 +1,8 @@
+Revision history for Perl extension Apache::AxKit::Language::XSP::Sendmail.
+
+0.05  Feb 08 2001
+	- Public release.
+
+0.01  Wed Jan 31 11:10:34 2001
+	- original version; created by h2xs 1.19
+

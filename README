@@ -1,0 +1,30 @@
+
+       Apache::AxKit::Language::XSP::Sendmail - Simple SMTP
+       mailer tag library for AxKit eXtesible Server Pages.
+       
+       Add the sendmail: namespace to your XSP <xsp:page> tag:
+       
+           <?xml-stylesheet href="." type="application/x-xsp"?> 
+           <xsp:page
+                language="Perl"
+                xmlns:xsp="http://www.apache.org/1999/XSP/Core"
+                xmlns:sendmail="http://www.axkit.org/ns/sendmail"
+           >
+            
+       And add this taglib to AxKit (via httpd.conf or
+       .htaccess):
+       
+           AxAddXSPTaglib Apache::AxKit::Language::XSP::Sendmail
+           
+           
+       The XSP sendmail: taglib adds a simple SMTP mailer to XSP
+       via Milivoj Ivkovic's platform-neutral Mail::Sendmail
+       module. In addition, all email addresses are validated
+       before sending using Maurice Aubrey's Email::Valid
+       package.
+       
+       Kip Hampton, khampton@totalcinema.com
+       
+       Copyright (c) 2001 Kip Hampton. All rights reserved. This
+       program is free software; you can redistribute it and/or 
+       modify it under the same terms as Perl itself.
